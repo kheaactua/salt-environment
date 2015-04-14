@@ -9,8 +9,10 @@ chrome_repo:
     # be run prior to running gui_essentials. This will make
     # sure the system can find the Chrome package.
     - require_in:
-      - pkg: google-chrome-stable
+      - pkg: chrome
 
+chrome:
   pkg.latest:
-    - name: google-chrome-stable
+    - pkgs:
+      - google-chrome-stable
     - refresh: True
