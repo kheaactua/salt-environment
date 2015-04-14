@@ -1,6 +1,6 @@
 # This salt file adds the Google Chrome repo to the
 # package manager.
-base:
+chrome_repo:
   pkgrepo.managed:
     - name: deb http://dl.google.com/linux/chrome/deb/ stable main
     - file: /etc/apt/sources.list.d/google-chrome.list
@@ -9,4 +9,8 @@ base:
     # be run prior to running gui_essentials. This will make
     # sure the system can find the Chrome package.
     - require_in:
-      - pkg: gui_essentials
+      - pkg: google-chrome-stable
+
+  pkg.latest:
+    - name: google-chrome-stable
+    - refresh: True
