@@ -10,3 +10,4 @@ essentials:
       - tmux
       - realpath
       - zsh
+      - autossh
