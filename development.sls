@@ -10,3 +10,4 @@ development:
       - cmake
       - cmake-curses-gui
       - cmake-qt-gui
+      - make
