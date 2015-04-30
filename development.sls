@@ -11,3 +11,4 @@ development:
       - cmake-curses-gui
       - cmake-qt-gui
       - make
+      - ninja-build
