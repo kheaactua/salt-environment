@@ -8,3 +8,12 @@ jmdaly:
     # Don't remove groups the user would normally be part of
     # that aren't specified in the list above:
     - remove_groups: False
+  user.present:
+    - fullname: Matthew Russell
+    - shell: /bin/zsh
+    - home: /home/matt
+    - groups:
+      - sudo
+    # Don't remove groups the user would normally be part of
+    # that aren't specified in the list above:
+    - remove_groups: False

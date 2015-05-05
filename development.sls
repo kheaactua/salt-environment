@@ -12,3 +12,6 @@ development:
       - cmake-qt-gui
       - make
       - ninja-build
+      - python3
+      - php5
+      - sqlite3

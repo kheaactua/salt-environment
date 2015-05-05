@@ -8,3 +8,6 @@ gui_essentials:
     - pkgs:
       - vim-gnome
       - google-chrome-stable
+      - xtightvncviewer
+      - rdesktop
+
