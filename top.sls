@@ -6,6 +6,7 @@ base:
     - match: list
     - gui_essentials
     - development
+    - latex
     - ntc_build_requirements
     - users
     - jmdaly_environment
