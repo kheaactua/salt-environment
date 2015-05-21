@@ -9,6 +9,7 @@ base:
     - latex
     - ntc_build_requirements
     - users
+    - rtags
     - jmdaly_environment
   'ntcbuild*':
     - development

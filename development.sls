@@ -13,3 +13,4 @@ development:
       - cmake-qt-gui
       - make
       - ninja-build
+      - build-essential
