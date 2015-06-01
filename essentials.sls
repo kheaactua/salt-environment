@@ -15,3 +15,7 @@ essentials:
       - realpath
       - htop
       - environment-modules
+      - xtightvncviewer
+      - screen
+      - python
+

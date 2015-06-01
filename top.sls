@@ -9,6 +9,8 @@ base:
     - ntc_build_requirements
     - users
     - matt_environment
+    - webdevel
+    - youtuber
   'ntcbuild*':
     - development
     - ntc_build_requirements
