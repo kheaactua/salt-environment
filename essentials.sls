@@ -12,4 +12,6 @@ essentials:
       - realpath
       - zsh
       - autossh
+      - realpath
+      - htop
       - environment-modules
