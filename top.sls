@@ -6,11 +6,13 @@ base:
     - match: list
     - gui_essentials
     - development
+    - latex
     - ntc_build_requirements
     - users
     - matt_environment
     - webdevel
     - youtuber
+    - rtags
   'ntcbuild*':
     - development
     - ntc_build_requirements

@@ -4,7 +4,8 @@ development:
     - pkgs:
       - g++
       - clang
-      - cscope
+      # This is needed to build YouCompleteMe:
+      - libpython-dev
       - ctags
       - cppcheck
       - cmake
@@ -16,3 +17,4 @@ development:
       - php5
       - sqlite3
       - neovim
+      - build-essential

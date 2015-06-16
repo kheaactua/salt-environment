@@ -1,6 +1,9 @@
 # This state sets up jmdaly's environment
 # by cloning his dotfiles repo, and running
 # the init scripts.
+include:
+  - development
+
 https://github.com/jmdaly/dotfiles.git:
   git.latest:
     - rev: master
@@ -24,3 +27,12 @@ vim +PluginInstall +qall:
     # Only run if it hasn't been run before, since this is
     # quite a slow operation:
     - creates: /home/jmdaly/.vim/bundle
+
+# Compile YouCompleteMe:
+/home/jmdaly/.vim/bundle/YouCompleteMe/install.sh --clang-completer:
+  cmd.run:
+    - cwd: /home/jmdaly/.vim/bundle/YouCompleteMe
+    - user: jmdaly
+    - creates: /home/jmdaly/.vim/bundle/YouCompleteMe/third_party/ycmd/build.py
+    - require:
+      - sls: development
