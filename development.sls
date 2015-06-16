@@ -15,3 +15,4 @@ development:
       - python3
       - php5
       - sqlite3
+      - neovim
